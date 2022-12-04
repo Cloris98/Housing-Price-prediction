@@ -182,14 +182,6 @@ test_pre = lr.predict(test_x)
 train_pre = lr.predict(train_x)
 print(test_pre, train_pre)
 
-plt.scatter(train_pre, train_y, c = "blue",  label = "Training data")
-plt.scatter(test_pre, test_y, c = "black",  label = "Validation data")
-plt.title("Linear regression")
-plt.xlabel("Predicted values")
-plt.ylabel("Real values")
-plt.legend(loc = "upper left")
-plt.plot([0, 800000], [0,800000], c = "red")
-plt.show()
 
 
 
